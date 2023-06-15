@@ -88,6 +88,15 @@ export class PublicationService {
       throw error;
     }
   }
+  static async getAllPublicationByUser( uuid: string) {
+    try {
+      const response = await axios.get(API_URL + "/ownPosts/"+ uuid, { headers: authHeader() });
+      return response;
+    } catch (error) {
+      console.error('Error during load feed:', error);
+      throw error;
+    }
+  }
 
 
 

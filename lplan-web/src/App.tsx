@@ -18,6 +18,7 @@ import UsersList from './pages/usersList.page/usersList.page';
 import MapPage from './pages/map.page/map.page';
 import CreateActivity from './pages/activity/createActivity.page';
 import ActivitiesLocationList from './pages/listActivityByLocation/list.activity.page';
+import UserStats from './pages/stats/stats.page';
 // Import of Components ...
 import Footer from './components/footer/footer';
 import { Auth } from './models/auth.model';
@@ -51,7 +52,8 @@ function App() {
           <Route path="/calendarevents" element={<CalendarEvents />} />
           <Route path="/map" element={<MapPage/>}></Route>
           <Route path="/createActivity" element={<CreateActivity/>}></Route> 
-          <Route path='/activityloclist' element={<ActivitiesLocationList/>}></Route>         
+          <Route path='/activityloclist' element={<ActivitiesLocationList/>}></Route>
+          <Route path="/stats" element={<UserStats/>}></Route>         
           <Route path='*' element={<PageNotFound />} />
         </Routes>
       </div>

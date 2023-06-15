@@ -173,6 +173,7 @@ const Profile = () => {
       ) : (
         <button className="share_show_button" onClick={handleShare}>Share</button>
       )}
+      
       <div className="profileContour">
         {currentUser && (
           <div className="profile-container">
@@ -191,6 +192,9 @@ const Profile = () => {
                 </Link>
                 <Link to="/profile/settings" className="buttonProfile">
                   {t("Settings")}
+                </Link>
+                <Link to="/stats" className="buttonProfile">
+                  {t("Stats")}
                 </Link>
               </div>
               <div className="profile-stats">
